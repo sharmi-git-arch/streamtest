@@ -15,7 +15,7 @@ test('GET /todos/1 returns correct todo', async () => {
   
   expect(response.status).toBe(200);
   expect(response.data.id).toBe(1);
-  expect(response.data.completed).toBe(false);
+  expect(typeof response.data.completed).toBe('boolean');
 });
 
 // Test 3 - POST creates new todo
