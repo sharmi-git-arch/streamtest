@@ -53,8 +53,14 @@ test('DELETE /todos removes a todo', async () => {
   });
   
   const id = newTodo.data.id;
-  const deleteResponse = await api.delete(`/todos/${id}`);
-  expect(deleteResponse.status).toBe(200);
+  
+  try {
+    const deleteResponse = await api.delete(`/todos/${id}`);
+    expect(deleteResponse.status).toBe(200);
+  } catch (error) {
+    console.log('Delete error:', error.message);
+    throw error;
+  }
 });
 
 // Test 6 - GET non existent todo returns 404

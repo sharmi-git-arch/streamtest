@@ -42,8 +42,14 @@ test('DELETE /posts removes a post', async () => {
   });
   
   const id = newPost.data.id;
-  const deleteResponse = await api.delete(`/posts/${id}`);
-  expect(deleteResponse.status).toBe(200);
+  
+  try {
+    const deleteResponse = await api.delete(`/posts/${id}`);
+    expect(deleteResponse.status).toBe(200);
+  } catch (error) {
+    console.log('Delete error:', error.message);
+    throw error;
+  }
 });
 
 // Test 5 - PUT updates a post
