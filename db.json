@@ -1,0 +1,77 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Only title changed",
+      "body": "Updated body",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Second post",
+      "body": "Learning API testing",
+      "userId": 1
+    },
+    {
+      "title": "Automated test post",
+      "body": "Created by Jest",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "Automated test post",
+      "body": "Created by Jest",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "title": "Automated test post",
+      "body": "Created by Jest",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "title": "Automated test post",
+      "body": "Created by Jest",
+      "userId": 1,
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "email": "john@email.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "jane@email.com"
+    },
+    {
+      "name": "Test User",
+      "email": "test@email.com",
+      "id": 3
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "title": "Buy groceries",
+      "completed": true,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Read a book",
+      "completed": true,
+      "userId": 2
+    },
+    {
+      "title": "Buy groceries",
+      "completed": false,
+      "userId": 1,
+      "id": 3
+    }
+  ]
+}
